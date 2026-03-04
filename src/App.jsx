@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import { ToastContainer, toast } from "react-toastify";
 
 const allTickets = async () => {
-  const res = await fetch("/public/tickets.json");
+  const res = await fetch("/tickets.json");
   return res.json();
 };
 const dataPromise = allTickets();
@@ -18,14 +18,23 @@ function App() {
   const [resolvedTask, setResolvedTask] = useState([]);
 
   const handleTicketClick = (ticket) => {
-    console.log(taskStatus);
     if (taskStatus && taskStatus.id === ticket.id) {
-      toast("This ticket is already included");
+      toast.warn("This ticket is already being worked on");
       return;
     } else {
-      toast(`Ticket "${ticket.title}" added to Task Status`);
+      toast.success(`Ticket "${ticket.title}" added to Task Status`);
       setTaskStatus(ticket);
       setProgressCount(progressCount + 1);
+    }
+  };
+
+  const handleCompleteButton = () => {
+    if (taskStatus) {
+      toast(`Task "${taskStatus.title}" completed!`);
+      setResolvedTask((previousTask) => [...previousTask, taskStatus]);
+      setResolvedCount(resolvedCount + 1);
+      setProgressCount(progressCount - 1);
+      setTaskStatus(null);
     }
   };
   return (
@@ -39,6 +48,7 @@ function App() {
         taskStatus={taskStatus}
         resolvedTask={resolvedTask}
         handleTicketClick={handleTicketClick}
+        handleCompleteButton={handleCompleteButton}
         dataPromise={dataPromise}
       ></MainSection>
       <Footer></Footer>

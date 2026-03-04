@@ -3,7 +3,13 @@ import SingleTicket from "../SingleTicket/SingleTicket";
 import TaskStatus from "../TaskStatus/TaskStatus";
 import ResolvedTask from "../ResolvedTask/ResolvedTask";
 
-const MainSection = ({ dataPromise, handleTicketClick, taskStatus }) => {
+const MainSection = ({
+  dataPromise,
+  handleTicketClick,
+  taskStatus,
+  handleCompleteButton,
+  resolvedTask,
+}) => {
   const tickets = use(dataPromise);
   return (
     <div className="flex justify-between">
@@ -20,8 +26,11 @@ const MainSection = ({ dataPromise, handleTicketClick, taskStatus }) => {
         </div>
       </div>
       <div>
-        <TaskStatus taskStatus={taskStatus}></TaskStatus>
-        <ResolvedTask></ResolvedTask>
+        <TaskStatus
+          taskStatus={taskStatus}
+          handleCompleteButton={handleCompleteButton}
+        ></TaskStatus>
+        <ResolvedTask resolvedTask={resolvedTask}></ResolvedTask>
       </div>
     </div>
   );
