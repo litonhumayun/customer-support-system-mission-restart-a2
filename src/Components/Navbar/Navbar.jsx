@@ -1,9 +1,17 @@
 import React from "react";
 import { FaPlus } from "react-icons/fa";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
+  const handleNewTicketAlert = () => {
+    toast.info("Opening new ticket form...", {
+      position: "top-right",
+      theme: "colored",
+    });
+  };
+
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar bg-base-100/90 backdrop-blur-md shadow-sm sticky top-0 z-50 px-4 lg:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -14,13 +22,12 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
+              />
             </svg>
           </div>
           <ul
@@ -36,7 +43,6 @@ const Navbar = () => {
             <li>
               <a>Changelog</a>
             </li>
-
             <li>
               <a>Blog</a>
             </li>
@@ -48,11 +54,13 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Digicacy Support</a>
+        <a className="btn btn-ghost text-xl font-bold hover:bg-blue-600 hover:text-white">
+          Digicacy Support
+        </a>
       </div>
 
       <div className="navbar-end">
-        <div className=" hidden lg:flex">
+        <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
               <a>Home</a>
@@ -63,7 +71,6 @@ const Navbar = () => {
             <li>
               <a>Changelog</a>
             </li>
-
             <li>
               <a>Blog</a>
             </li>
@@ -75,7 +82,10 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <a className="btn btn-primary">
+        <a
+          className="btn btn-primary ml-2 hover:bg-amber-50 hover:text-black"
+          onClick={handleNewTicketAlert}
+        >
           <FaPlus />
           New Ticket
         </a>
