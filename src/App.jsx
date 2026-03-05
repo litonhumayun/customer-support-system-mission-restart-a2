@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
@@ -47,14 +47,22 @@ function App() {
         progressCount={progressCount}
         resolvedCount={resolvedCount}
       ></Banner>
-      <MainSection
-        className="max-w-auto"
-        taskStatus={taskStatus}
-        resolvedTask={resolvedTask}
-        handleTicketClick={handleTicketClick}
-        handleCompleteButton={handleCompleteButton}
-        dataPromise={dataPromise}
-      ></MainSection>
+      <Suspense
+        fallback={
+          <h1 className="text-center font-bold text-green-500 text-4xl">
+            Loading Data. Please Wait...
+          </h1>
+        }
+      >
+        <MainSection
+          className="max-w-auto"
+          taskStatus={taskStatus}
+          resolvedTask={resolvedTask}
+          handleTicketClick={handleTicketClick}
+          handleCompleteButton={handleCompleteButton}
+          dataPromise={dataPromise}
+        ></MainSection>
+      </Suspense>
       <Footer></Footer>
       <ToastContainer />
     </>
