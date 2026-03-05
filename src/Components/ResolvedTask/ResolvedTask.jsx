@@ -1,7 +1,6 @@
 import React from "react";
 
 const ResolvedTask = ({ resolvedTask }) => {
-  console.log(resolvedTask);
   return (
     <div className="mt-8 border-t pt-4">
       <h2 className="text-xl font-bold mb-4">

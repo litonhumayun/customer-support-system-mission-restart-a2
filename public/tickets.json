@@ -1,6 +1,6 @@
 [
   {
-    "id": "TCK-001",
+    "id": "TCK001",
     "title": "Landing Page Redesign with React",
     "description": "Redesign the personal business landing page using React.js with a modern UI, responsive layout, and optimized performance.",
     "customer": "Arif Hasan",
@@ -9,7 +9,7 @@
     "createdAt": "2026-03-01T09:15:00Z"
   },
   {
-    "id": "TCK-002",
+    "id": "TCK002",
     "title": "E-commerce Product Page Development",
     "description": "Develop a dynamic product details page using React and integrate it with existing REST APIs.",
     "customer": "Nusrat Jahan",
@@ -18,7 +18,7 @@
     "createdAt": "2026-03-01T11:30:00Z"
   },
   {
-    "id": "TCK-003",
+    "id": "TCK003",
     "title": "Portfolio Website with React Router",
     "description": "Create a multi-page portfolio website using React Router with smooth navigation and animations.",
     "customer": "Mahmud Rahman",
@@ -27,7 +27,7 @@
     "createdAt": "2026-02-28T14:45:00Z"
   },
   {
-    "id": "TCK-004",
+    "id": "TCK004",
     "title": "Admin Dashboard UI Development",
     "description": "Design and implement an admin dashboard with charts, tables, and authentication using React and Firebase.",
     "customer": "Farhana Akter",
@@ -36,16 +36,16 @@
     "createdAt": "2026-02-27T10:20:00Z"
   },
   {
-    "id": "TCK-005",
+    "id": "TCK005",
     "title": "Website Performance Optimization",
     "description": "Optimize React application performance by implementing lazy loading, code splitting, and memoization.",
     "customer": "Tanvir Ahmed",
-    "priority": "Medium",
+    "priority": "Medium Priority",
     "status": "Open Priority",
     "createdAt": "2026-02-26T08:10:00Z"
   },
   {
-    "id": "TCK-006",
+    "id": "TCK006",
     "title": "SEO Enhancement with Next.js",
     "description": "Improve SEO by implementing server-side rendering using Next.js and adding proper meta tags.",
     "customer": "Sadia Islam",
@@ -54,7 +54,7 @@
     "createdAt": "2026-02-25T13:05:00Z"
   },
   {
-    "id": "TCK-007",
+    "id": "TCK007",
     "title": "Authentication System with Firebase",
     "description": "Integrate email/password and social login authentication in a React web application using Firebase.",
     "customer": "Rafiul Karim",
@@ -63,7 +63,7 @@
     "createdAt": "2026-02-24T16:40:00Z"
   },
   {
-    "id": "TCK-008",
+    "id": "TCK008",
     "title": "UI Component Library Setup",
     "description": "Build a reusable component library in React with Storybook documentation for future scalability.",
     "customer": "Jannatul Ferdous",
@@ -72,7 +72,7 @@
     "createdAt": "2026-02-23T12:25:00Z"
   },
   {
-    "id": "TCK-009",
+    "id": "TCK009",
     "title": "Blog Platform Frontend Development",
     "description": "Develop a blog frontend using React, with markdown support and API integration.",
     "customer": "Imran Hossain",
@@ -81,7 +81,7 @@
     "createdAt": "2026-02-22T09:55:00Z"
   },
   {
-    "id": "TCK-010",
+    "id": "TCK010",
     "title": "Responsive Navigation Bar Fix",
     "description": "Fix mobile responsiveness issues in the navigation bar using React and CSS Flexbox.",
     "customer": "Sharmin Sultana",
@@ -90,7 +90,7 @@
     "createdAt": "2026-02-21T15:30:00Z"
   },
   {
-    "id": "TCK-011",
+    "id": "TCK011",
     "title": "Form Validation with React Hook Form",
     "description": "Implement advanced form validation using React Hook Form and Yup schema validation.",
     "customer": "Mehedi Hasan",
@@ -99,7 +99,7 @@
     "createdAt": "2026-02-20T10:00:00Z"
   },
   {
-    "id": "TCK-012",
+    "id": "TCK012",
     "title": "Dark Mode Implementation",
     "description": "Add dark mode toggle feature to existing React application with theme persistence using localStorage.",
     "customer": "Tania Rahman",
@@ -108,7 +108,7 @@
     "createdAt": "2026-02-19T18:45:00Z"
   },
   {
-    "id": "TCK-013",
+    "id": "TCK013",
     "title": "API Error Handling Improvement",
     "description": "Enhance global error handling system in React app with proper toast notifications and fallback UI.",
     "customer": "Shakil Ahmed",
@@ -117,7 +117,7 @@
     "createdAt": "2026-02-18T14:10:00Z"
   },
   {
-    "id": "TCK-014",
+    "id": "TCK014",
     "title": "Deployment Setup with CI/CD",
     "description": "Configure automated deployment pipeline for React app using GitHub Actions and Vercel.",
     "customer": "Moumita Das",

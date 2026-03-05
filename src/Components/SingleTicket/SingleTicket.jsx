@@ -6,16 +6,19 @@ const SingleTicket = ({ ticket, handleTicketClick }) => {
   const colorKey = ticket.priority?.toLowerCase();
   const colors = {
     "high priority": "text-red-600",
-    "medium priority": "text-yellow-500",
+    "medium priority": "text-yellow-700",
     "low priority": "text-green-600",
   };
   const handleClick = () => {
     handleTicketClick(ticket);
   };
   return (
-    <button className="border p-2 m-2" onClick={handleClick}>
-      <div className="flex justify-between">
-        <h3>{ticket.title}</h3>
+    <button
+      className=" m-2 w-auto p-5 border rounded-xl hover:border-blue-500 hover:bg-gray-400 hover:shadow-lg transition-all cursor-pointer bg-white"
+      onClick={handleClick}
+    >
+      <div className="flex justify-between my-2">
+        <h3 className="text-left font-bold">{ticket.title}</h3>
         <div
           className={`px-3 py-1 rounded-full text-sm text-black ${
             ticket.status === "Open"
@@ -30,7 +33,7 @@ const SingleTicket = ({ ticket, handleTicketClick }) => {
         </div>
       </div>
       <div>
-        <p className="start">{ticket.description}</p>
+        <p className="text-left justify-center my-2">{ticket.description}</p>
       </div>
       <div className="flex justify-between">
         <div className="flex items-center gap-2">
