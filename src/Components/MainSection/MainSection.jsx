@@ -18,7 +18,7 @@ const MainSection = ({
     handleCompleteButton(ticket);
   };
   return (
-    <div className=" px-4 py-10 flex flex-col lg:flex-row gap-2 max-w-auto mx-auto">
+    <div className=" px-4 py-4 flex flex-col lg:flex-row gap-2 max-w-auto mx-auto">
       <div className=" lg:w-3/4">
         <div>
           <h1 className="text-3xl font-black text-gray-800 text-center ">
@@ -46,7 +46,7 @@ const MainSection = ({
           )}
         </div>
       </div>
-      <div className="lg:w-1/4 m-20">
+      <div className="lg:w-1/4 m-4">
         <TaskStatus
           taskStatus={taskStatus}
           handleCompleteButton={removingExistingCard}

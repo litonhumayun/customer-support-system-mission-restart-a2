@@ -48,7 +48,7 @@ function App() {
         resolvedCount={resolvedCount}
       ></Banner>
       <MainSection
-        className="max-w-1440"
+        className="max-w-auto"
         taskStatus={taskStatus}
         resolvedTask={resolvedTask}
         handleTicketClick={handleTicketClick}

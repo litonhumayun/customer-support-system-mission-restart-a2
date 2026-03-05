@@ -2,7 +2,7 @@ import React from "react";
 
 const TaskStatus = ({ taskStatus, handleCompleteButton }) => {
   return (
-    <div>
+    <div className="mb-10">
       <h2 className="font-bold text-xl mb-4">
         Task Status: {taskStatus.length}
       </h2>
